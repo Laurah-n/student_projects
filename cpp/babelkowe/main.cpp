@@ -3,8 +3,9 @@
 
 using namespace std;
 
-void sortowanie_babelkowe(int tab[], int n)
+void sortowanie_babelkowe(vector<int> tab)
 {
+	int n = tab.size();
 	for(int i=0; i<n; i++)
 		for(int j=1; j<n-i; j++)
 		if(tab[j-1]>tab[j])
@@ -13,19 +14,19 @@ void sortowanie_babelkowe(int tab[], int n)
 
 int main()
 {
-	int *tab, n;
+	vector<int> tab;
 
-	cout<<"ile liczb?";
-	cin>>n;
+	tab.push_back(45);
+	tab.push_back(123);
+	tab.push_back(9);
+	tab.push_back(83);
 
-	tab = new int[n];
-
-	for(int i=0;i<n;i++)
+	for(int i=0;i<tab.size();i++)
 		cin>>tab[i];
 
-	sortowanie_babelkowe(tab,n);
+	sortowanie_babelkowe(tab);
 
-	for(int i=0; i<n; i++)
+	for(int i=0; i<tab.size(); i++)
 		cout<<tab[i]<<" ";
 
 	return 0;
