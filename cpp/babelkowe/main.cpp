@@ -3,31 +3,60 @@
 
 using namespace std;
 
-void sortowanie_babelkowe(vector<int> tab)
+void BubbleSort(vector<int>& vec){
+    int i, j;
+    bool swapped;
+
+    for(i = 0; i < vec.size() - 1; i++)
+    {
+	    swapped = false;
+	    for(j = 0; j < vec.size() - i - 1; j++)
+	    {
+		if(vec[j] > vec[j + 1])
+		{
+		    swap(vec[j], vec[j + 1]);
+		    swapped = true;
+		}
+	    }
+
+	    if(swapped == false)
+	    {
+		break;
+	    }
+
+    }
+}
+
+void PrintVector(vector<int> vec)
 {
-	int n = tab.size();
-	for(int i=0; i<n; i++)
-		for(int j=1; j<n-i; j++)
-		if(tab[j-1]>tab[j])
-			swap(tab[j-1], tab[j]);
+    for(int i = 0; i < vec.size(); i++)
+    {
+	cout<<" "<<vec[i];
+    }
 }
 
 int main()
 {
-	vector<int> tab;
+    vector<int> vec;
+    int n;
 
-	tab.push_back(45);
-	tab.push_back(123);
-	tab.push_back(9);
-	tab.push_back(83);
+    cout << "Podaj ilosc elementow: ";
+    cin >> n;
+    
+    //values for loop
+    int elem;
 
-	for(int i=0;i<tab.size();i++)
-		cin>>tab[i];
+    for(int i = 0; i < n; i++)
+   {
+	cout << "Podaj element:";
+	cin >> elem; 
+	vec.push_back(elem);
+   } 
+    BubbleSort(vec);
 
-	sortowanie_babelkowe(tab);
-
-	for(int i=0; i<tab.size(); i++)
-		cout<<tab[i]<<" ";
-
-	return 0;
+    cout << "Posortowany wektor: ";
+    PrintVector(vec);
+    
+    return 0;
+ 
 }
