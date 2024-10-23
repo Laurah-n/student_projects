@@ -5,6 +5,8 @@
 #include "gtest/gtest.h"
 #include <chrono>
 
+using namespace std;
+
 // Funkcja sortująca wektor za pomocą QuickSort
 void quickSort(std::vector<int>& vec) {
     if (vec.size() <= 1) return;
@@ -21,6 +23,9 @@ void quickSort(std::vector<int>& vec) {
     vec.push_back(pivot);
     vec.insert(vec.end(), right.begin(), right.end());
 }
+
+//Funkcja sortująca wektor za pomocą BubbleSort
+
 
 // Test wydajności sortowania QuickSort
 TEST(BenchmarkTest, QuickSortBenchmark) {
