@@ -112,6 +112,13 @@ int main(int argc, char **argv) {
 3. `ReturnsFizzBuzzForMultipleOf15`: Sprawdza, czy dla liczb podzielnych zarówno przez 3, jak i przez 5 zwracany jest tekst "FizzBuzz".
 4. `ReturnsEmptyStringForNonMultipleOf3Or5`: Sprawdza, czy dla liczb niepodzielnych ani przez 3, ani przez 5 zwracany jest pusty ciąg znaków.
 
+### Kompilacja Testów:
+
+Aby skompilować kod, użyj polecenia:
+```
+./kompiluj_test.sh
+```
+
 ### Uruchamianie Testów:
 
 Po kompilacji możesz uruchomić testy, używając:
