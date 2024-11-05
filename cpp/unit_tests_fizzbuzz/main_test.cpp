@@ -15,10 +15,15 @@ TEST(FizzBuzzTests, ReturnsBuzzForMultipleOf5) {
 	EXPECT_EQ(result, "Buzz");
 }
 
-TEST(FizzBuzzTests, ReturnsEmptyStringForNonMultipleOf3Or5) {
+TEST(FizzBuzzTests, ReturnsFizzBuzzForMultipleOf15) {
   //#TODO: tu napisz test
 	string result = FizzBuzz(15);
 	EXPECT_EQ(result, "FizzBuzz");
+}
+
+TEST(FizzBuzzTests, ReturnsEmptyStringForNonMultipleOf3Or5) {
+    string result = FizzBuzz(7);
+    EXPECT_EQ(result, "");
 }
 
 
