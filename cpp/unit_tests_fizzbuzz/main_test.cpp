@@ -3,19 +3,19 @@
 #include "functions.cpp"
 #include <string>
 
-TEST(FizzBuzzTests, FizzBu) {
+TEST(FizzBuzzTests, ReturnsFizzForMultipleOf3) {
  //#TODO: tu napisz test
 	string result = FizzBuzz(3);
 	EXPECT_EQ(result, "Fizz");
 }
 
-TEST(FizzBuzzTests, FizzBu) {
+TEST(FizzBuzzTests, ReturnsBuzzForMultipleOf5) {
   //#TODO: tu napisz test
 	string result = FizzBuzz(5);
 	EXPECT_EQ(result, "Buzz");
 }
 
-TEST(FizzBuzzTests, FizzBu) {
+TEST(FizzBuzzTests, ReturnsEmptyStringForNonMultipleOf3Or5) {
   //#TODO: tu napisz test
 	string result = FizzBuzz(15);
 	EXPECT_EQ(result, "FizzBuzz");
