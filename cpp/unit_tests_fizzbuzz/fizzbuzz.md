@@ -1,6 +1,6 @@
 # Funkcja FizzBuzz i Testy
 
-To repozytorium zawiera prostą implementację funkcji "FizzBuzz", oraz jej testy jednostkowe przy użyciu frameworka Google Test.
+Dokumentacja funkcji `FizzBuzz` i jej testów.
 
 ## Spis Treści
 - Opis
@@ -12,7 +12,7 @@ To repozytorium zawiera prostą implementację funkcji "FizzBuzz", oraz jej test
 
 ## Opis
 
-Funkcja FizzBuzz to ćwiczenie programistyczne, w którym:
+Funkcja FizzBuzz to ćwiczenie, w którym:
 - Jeśli liczba jest podzielna przez 3, funkcja zwraca "Fizz".
 - Jeśli liczba jest podzielna przez 5, funkcja zwraca "Buzz".
 - Jeśli liczba jest podzielna zarówno przez 3, jak i przez 5, funkcja zwraca "FizzBuzz".
@@ -20,7 +20,7 @@ Funkcja FizzBuzz to ćwiczenie programistyczne, w którym:
 
 ## Struktura Kodu
 
-Repozytorium zawiera dwa główne pliki:
+Zawiera dwa główne pliki:
 1. `functions.cpp`: Zawiera definicję funkcji `FizzBuzz`.
 2. `main_test.cpp`: Zawiera testy jednostkowe dla funkcji `FizzBuzz`.
 
@@ -70,8 +70,6 @@ string FizzBuzz(int liczba) {
 ## Testy jednostkowe
 
 ### Plik Testów: `main_test.cpp`
-
-Testy jednostkowe zostały zaimplementowane przy użyciu frameworka Google Test, aby sprawdzić, czy `FizzBuzz` działa zgodnie z oczekiwaniami. Każdy test weryfikuje konkretny scenariusz dotyczący podzielności liczby wejściowej.
 
 ### Kod:
 ```cpp
