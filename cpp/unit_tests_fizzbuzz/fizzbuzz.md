@@ -32,10 +32,6 @@ Funkcja `FizzBuzz` przyjmuje liczbę całkowitą jako argument i zwraca `string`
 
 ### Kod:
 ```cpp
-#include <string>
-
-using namespace std;
-
 string FizzBuzz(int liczba) {
     string result = "";
     if (liczba % 3 == 0) {
@@ -73,10 +69,6 @@ string FizzBuzz(int liczba) {
 
 ### Kod:
 ```cpp
-#include <gtest/gtest.h>
-#include "functions.cpp"
-#include <string>
-
 TEST(FizzBuzzTests, ReturnsFizzForMultipleOf3) {
     string result = FizzBuzz(3);
     EXPECT_EQ(result, "Fizz");
