@@ -29,6 +29,56 @@ int main() {
     cout<<"Ilość stopni: "<<iloscStopni<<endl;
     cout<<"Głębokość pojedynczego stopnia: "<<glebokoscStopnia<<endl;
     cout<<"Wysokość pojedynczego stopnia: "<<wysokoscStopnia<<endl;
+
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    // Wprowadzenie danych od użytkownika
+    double wysokoscKlatki, dlugoscKlatki;
+    cout << "Podaj wysokosc klatki schodowej (w cm): ";
+    cin >> wysokoscKlatki;
+    cout << "Podaj dlugosc klatki schodowej (w cm): ";
+    cin >> dlugoscKlatki;
+
+    // Zakresy dla długości i wysokości schodka
+    const double minDlugoscSchodka = 29.0, maxDlugoscSchodka = 32.0;
+    const double minWysokoscSchodka = 15.0, maxWysokoscSchodka = 17.0;
+
+    bool znalezionoRozwiazanie = false;
+
+    // Pętla dla długości schodka
+    for (double dlugoscSchodka = minDlugoscSchodka; dlugoscSchodka <= maxDlugoscSchodka; dlugoscSchodka++) {
+        // Obliczanie liczby schodów na podstawie długości klatki schodowej
+        int liczbaSchodowDlugosc = static_cast<int>(dlugoscKlatki / dlugoscSchodka);
+        if (dlugoscSchodka * liczbaSchodowDlugosc == dlugoscKlatki) { // Sprawdzenie, czy wynik jest liczba całkowitą
+            for (double wysokoscSchodka = minWysokoscSchodka; wysokoscSchodka <= maxWysokoscSchodka; wysokoscSchodka++) {
+                // Obliczanie liczby schodów na podstawie wysokości klatki schodowej
+                int liczbaSchodowWysokosc = static_cast<int>(wysokoscKlatki / wysokoscSchodka);
+                if (wysokoscSchodka * liczbaSchodowWysokosc == wysokoscKlatki) { // Sprawdzenie, czy wynik jest liczba całkowitą
+                    // Jeśli obie liczby schodów są takie same, wypisz wynik
+                    if (liczbaSchodowDlugosc == liczbaSchodowWysokosc) {
+                        cout << "Liczba schodow: " << liczbaSchodowDlugosc << endl;
+                        cout << "Dlugosc schodka: " << dlugoscSchodka << " cm" << endl;
+                        cout << "Wysokosc schodka: " << wysokoscSchodka << " cm" << endl;
+                        znalezionoRozwiazanie = true;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    if (!znalezionoRozwiazanie) {
+        cout << "Nie znaleziono odpowiedniego rozwiazania dla podanych danych." << endl;
+    }
+
+    return 0;
+}
+
     
     
     return 0;
