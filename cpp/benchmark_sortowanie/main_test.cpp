@@ -25,6 +25,20 @@ void quickSort(std::vector<int>& vec) {
 }
 
 //Funkcja sortująca wektor za pomocą BubbleSort
+void bubbleSort(std::vector<int>& x) {
+	for(int i = 0; i < x.size(); i++)
+	{
+		for(int j = 0; j < x.size() - 1; j++)
+		{
+			if(x[j] > x[j + 1])
+			{
+				int tmp = x[j];
+				x[j] = x[j + 1];
+				x[j + 1] = tmp;
+			}
+		}
+	}
+}
 
 
 // Test wydajności sortowania QuickSort
@@ -44,6 +58,25 @@ TEST(BenchmarkTest, QuickSortBenchmark) {
 
     std::cout << "Czas sortowania: " << elapsed_seconds.count() << "s\n";
 }
+
+// Test wydajności sortowania BubbleSort 
+TEST(BenchmarkTest, BubbleSortBenchmark) {
+    std::vector<int> vec(10000); // Tworzymy wektor z 10000 losowymi liczbami
+    std::srand(std::time(0)); // Inicjalizacja generatora liczb losowych
+    std::generate(vec.begin(), vec.end(), std::rand);
+
+    // Początek pomiaru czasu
+    auto start = std::chrono::high_resolution_clock::now();
+
+    bubbleSort(vec); // Sortujemy wektor
+
+    // Koniec pomiaru czasu
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed_seconds = end - start;
+
+    std::cout << "Czas sortowania: " << elapsed_seconds.count() << "s\n";
+}
+
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
