@@ -1,7 +1,7 @@
 # Porównanie funkcji `if` oraz `switch`
 
 ## Cel programu:
-Program ma za zadanie porównać, jak szybko wykonują się dwie funkcje: `if` oraz `switch`. W ramach testów program wielokrotnie wykonuje obie instrukcje, mierzy czas ich działania i wyświetla wyniki.
+Program ma za zadanie porównać, jak szybko wykonują się dwie funkcje: `if` oraz `switch`. W ramach testów program wykonuje obie instrukcje, mierzy czas ich działania i wyświetla wyniki.
 
 ---
 
