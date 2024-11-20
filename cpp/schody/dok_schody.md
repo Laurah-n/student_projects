@@ -24,7 +24,7 @@ Program ma za zadanie obliczyć ile schodów zmieści się w klatce schodowej, k
 - Następnie mamy zakresy, w których zawarte są standardowe wymiary schodka.
 - Na końcu mamy zmienną **bool** `znalezionoRozwiazanie`, która przyjmuje wartość `false`, ponieważ początkoo nie wiemy, czy istnieje rozwiązanie, które spełni warunki programu.
 
-## Pętla `for`:
+### Pętla `for`:
 ```cpp
     for (double dlugoscSchodka = minDlugoscSchodka; dlugoscSchodka <= maxDlugoscSchodka; dlugoscSchodka += 0.1) {
         int liczbaSchodowDlugosc = static_cast<int>(dlugoscKlatki / dlugoscSchodka);
