@@ -29,6 +29,9 @@ int main() {
     cout<<"Ilość stopni: "<<iloscStopni<<endl;
     cout<<"Głębokość pojedynczego stopnia: "<<glebokoscStopnia<<endl;
     cout<<"Wysokość pojedynczego stopnia: "<<wysokoscStopnia<<endl;
+    
+    return 0;
+}
 
 
 #include <iostream>
@@ -79,8 +82,4 @@ int main() {
     return 0;
 }
 
-    
-    
-    return 0;
-}
 
