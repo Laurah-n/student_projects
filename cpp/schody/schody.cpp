@@ -54,11 +54,11 @@ int main() {
     bool znalezionoRozwiazanie = false;
 
     // Pętla dla długości schodka
-    for (double dlugoscSchodka = minDlugoscSchodka; dlugoscSchodka <= maxDlugoscSchodka; dlugoscSchodka++) {
+    for (double dlugoscSchodka = minDlugoscSchodka; dlugoscSchodka <= maxDlugoscSchodka; dlugoscSchodka += 0.1) {
         // Obliczanie liczby schodów na podstawie długości klatki schodowej
         int liczbaSchodowDlugosc = static_cast<int>(dlugoscKlatki / dlugoscSchodka);
         if (dlugoscSchodka * liczbaSchodowDlugosc == dlugoscKlatki) { // Sprawdzenie, czy wynik jest liczba całkowitą
-            for (double wysokoscSchodka = minWysokoscSchodka; wysokoscSchodka <= maxWysokoscSchodka; wysokoscSchodka++) {
+            for (double wysokoscSchodka = minWysokoscSchodka; wysokoscSchodka <= maxWysokoscSchodka; wysokoscSchodka += 0.1) {
                 // Obliczanie liczby schodów na podstawie wysokości klatki schodowej
                 int liczbaSchodowWysokosc = static_cast<int>(wysokoscKlatki / wysokoscSchodka);
                 if (wysokoscSchodka * liczbaSchodowWysokosc == wysokoscKlatki) { // Sprawdzenie, czy wynik jest liczba całkowitą
