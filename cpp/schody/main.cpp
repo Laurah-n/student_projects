@@ -1,6 +1,5 @@
 #include <iostream>
 #include "functions.h"
-#include "funcions.cpp"
 
 int main() {
     double wysokosc, dlugosc;
