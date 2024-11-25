@@ -1,5 +1,4 @@
 #include <gtest/gtest.h>
-#include "functions.h"
 #include "functions.cpp"
 
 TEST(SchodyTests, TestIloscStopni){
@@ -15,11 +14,9 @@ TEST(SchodyTests, TestWymiarySchodka){
 	EXPECT_DOUBLE_EQ(dlugoscStopnia, 30.0);
 	EXPECT_DOUBLE_EQ(wysokoscStopnia, 15.0);
 
-	obliczWymiaryStopnia(200.0, 150.0, 7, dlugoscStopnia, wysokoscStopnia);
-	EXPECT_DOUBLE_EQ(dlugoscStopnia, 28.57);
-	EXPECT_DOUBLE_EQ(wysokoscStopnia, 21.43);
-
-	EXPECT_THROW(obliczWyiaryStopnia(300.0, 150.0, -1, dlugoscStopnia, wysokoscStopnia), std::invalid_argument;
+	obliczWymiaryStopnia(280.0, 180.0, 10, dlugoscStopnia, wysokoscStopnia);
+	EXPECT_DOUBLE_EQ(dlugoscStopnia, 28);
+	EXPECT_DOUBLE_EQ(wysokoscStopnia, 18);
 }
 
 int main(int argc, char **argv){

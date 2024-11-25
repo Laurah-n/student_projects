@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
 #include <algorithm>
-#include "functions.h"
 
 void wprowadzenieWymiarow(double& wysokosc, double& dlugosc) {
     std::cout << "Podaj wysokość schodów (w cm): ";
