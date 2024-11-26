@@ -208,3 +208,15 @@ int main(int argc, char **argv){
 }
 ```
 
+### Zastosowanie testów:
+
+1. **Testowanie poprawności funkcji:**
+	- Funkcja `obliczIloscStopni` sprawdzana jest pod kątem poprawnych i niepoprawnych danych wejściowych.
+	- Funkcja `obliczWymiaryStopnia` testowana jest na różnych przypadkach.
+2. **Sprawdzanie stabilności programu:**
+	- Testy pozwalają upewnić się, że zmiany w kodzie nie psują jego funkcjonalności.
+
+### Przykład działania:
+
+
+
