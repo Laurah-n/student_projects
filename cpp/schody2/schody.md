@@ -208,6 +208,16 @@ int main(int argc, char **argv){
 }
 ```
 
+### Działanie kodu:
+
+1. Google Test uruchamia testy zdefiniowane w TEST().
+- (EXPECT_EQ, EXPECT_DOUBLE_EQ) sprawdza wynik zwracany przez funkcję porównując go z oczekiwanym.
+2. W przypadku błędów testy wypisują szczegóły, takie jak:
+- Wartość zwrócona przez funkcję.
+- Wartość oczekiwana.
+3. Jeśli wszystkie testy przejdą, program zwraca 0, co oznacza sukces.
+
+
 ### Zastosowanie testów:
 
 1. **Testowanie poprawności funkcji:**
