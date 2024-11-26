@@ -218,5 +218,5 @@ int main(int argc, char **argv){
 
 ### Przykład działania:
 
-cpp/schody2/maszynatesty.png
+![maszynatesty](https://github.com/user-attachments/assets/180d372b-3b20-4f8f-8dc1-416dc97348bc)
 
