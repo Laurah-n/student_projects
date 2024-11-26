@@ -179,3 +179,32 @@ int main() {
 
 Testy jednostkowe sprawdzają czy funkcje w pliku `functions.cpp` działają poprawnie. Znajdują się w pliku `main_tests.cpp`.
 
+### Kod:
+```cpp
+#include <gtest/gtest.h>
+#include "functions.cpp"
+
+TEST(SchodyTests, TestIloscStopni){
+	EXPECT_EQ(obliczIloscStopni(150, 200), 7);
+	EXPECT_EQ(obliczIloscStopni(180, 280), 10);
+	EXPECT_EQ(obliczIloscStopni(50, 70), -1);
+}
+
+TEST(SchodyTests, TestWymiarySchodka){
+	double dlugoscStopnia, wysokoscStopnia;
+
+	obliczWymiaryStopnia(300.0, 150.0, 10, dlugoscStopnia, wysokoscStopnia);
+	EXPECT_DOUBLE_EQ(dlugoscStopnia, 30.0);
+	EXPECT_DOUBLE_EQ(wysokoscStopnia, 15.0);
+
+	obliczWymiaryStopnia(200.0, 150.0, 7, dlugoscStopnia, wysokoscStopnia);
+	EXPECT_DOUBLE_EQ(dlugoscStopnia, 28.57);
+	EXPECT_DOUBLE_EQ(wysokoscStopnia, 21.43);
+}
+
+int main(int argc, char **argv){
+	testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
+}
+```
+
