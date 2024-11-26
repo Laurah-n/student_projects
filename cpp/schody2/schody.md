@@ -208,6 +208,8 @@ int main(int argc, char **argv){
 }
 ```
 
+---
+
 ### Działanie kodu:
 
 1. Google Test uruchamia testy zdefiniowane w TEST().
@@ -217,6 +219,7 @@ int main(int argc, char **argv){
 - Wartość oczekiwana.
 3. Jeśli wszystkie testy przejdą, program zwraca 0, co oznacza sukces.
 
+---
 
 ### Zastosowanie testów:
 
@@ -225,6 +228,8 @@ int main(int argc, char **argv){
 	- Funkcja `obliczWymiaryStopnia` testowana jest na różnych przypadkach.
 2. **Sprawdzanie stabilności programu:**
 	- Testy pozwalają upewnić się, że zmiany w kodzie nie psują jego funkcjonalności.
+
+---
 
 ### Przykład działania:
 
