@@ -143,23 +143,23 @@ int main() {
 
 1. **Wprowadzenie danych:**
 
-- Użytkownik podaje wysokość i długość schodów.
+	- Użytkownik podaje wysokość i długość schodów.
 
 2. **Obliczenie liczby stopni:**
 
-- Program wyznacza liczbę stopni w oparciu o podane zakresy.
+	- Program wyznacza liczbę stopni w oparciu o podane zakresy.
 
 3. **Sprawdzenie poprawności wymiarów:**
 
-- Jeśli którakolwiek podana wartość nie pozwala na wygenerowanie wymiarowych schodów, program zwraca komunikat o błędzie.
+	- Jeśli którakolwiek podana wartość nie pozwala na wygenerowanie wymiarowych schodów, program zwraca komunikat o błędzie.
 
 4. **Obliczenie wymiarów pojedynczego stopnia:**
 
-- Na podstawie liczby stopni program oblicza długość i wysokość każdego stopnia.
+	- Na podstawie liczby stopni program oblicza długość i wysokość każdego stopnia.
 
 5. **Wyświetlenie wyników:**
 
-- Liczba stopni, długość i wysokość pojedynczego stopnia są wyświetlane użytkownikowi.
+	- Liczba stopni, długość i wysokość pojedynczego stopnia są wyświetlane użytkownikowi.
 
 ---
 
