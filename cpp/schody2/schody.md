@@ -10,13 +10,13 @@ Program składa się z trzech plików:
 
 1. `functions.cpp` - zawiera implementacje funkcji
 2. `main.cpp` - główny plik programu
-3. `main_tests.cpp` - zawiera testy funcji
+3. `main_test.cpp` - zawiera testy funcji
 
 ---
 
 ## Plik `functions.cpp`
 
-Implementacja funkcji, które później są użyte w pliku `main.cpp` oraz `main_tests.cpp`.
+Implementacja funkcji, które później są użyte w pliku `main.cpp` oraz `main_test.cpp`.
 
 ### Kod:
 ```cpp
@@ -177,7 +177,7 @@ int main() {
 
 ## Testy programu
 
-Testy jednostkowe sprawdzają czy funkcje w pliku `functions.cpp` działają poprawnie. Znajdują się w pliku `main_tests.cpp`.
+Testy jednostkowe sprawdzają czy funkcje w pliku `functions.cpp` działają poprawnie. Znajdują się w pliku `main_test.cpp`.
 
 ### Kod:
 ```cpp
