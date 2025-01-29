@@ -9,8 +9,9 @@ Jest to gra mobilna, w której użytkownik steruje łódką pływającą na wodz
 
 - Po otwarciu aplikacji widzimy łódkę poruszającą się po wodzie.
 
-  
-- W rogu ekranu możemy zauważyć również igłe kompasu, która wskazuje kierunek wiatru. 
+![image](https://github.com/user-attachments/assets/408d08ce-1026-4afb-b633-ae4a5b6a1c8c)
+
+- W rogu ekranu możemy zauważyć również igłe kompasu, która wskazuje kierunek wiatru z dokładnością w stopniach. 
 
 ![image](https://github.com/user-attachments/assets/988cfa6f-b319-4fb2-94fa-dc185577ec81)
 
@@ -21,5 +22,9 @@ Jest to gra mobilna, w której użytkownik steruje łódką pływającą na wodz
 - Na dole ekranu znajdują się dwa przyciski. Jeden służy do skręcania w prawo natomiast drugi służy do skręcania w lewo.
 - Prędkosć płynięcia żaglówki zależy od kierunku wiatru.
 - Gdy płyniemy pod wiatr nasza żaglówka zacznie zwalniać, aż do pełnego zatrzymania. Aby łódka ponownie zaczęła się poruszać wystaczy że skręcimy w prawo lub lewo.
-- 
+- Łódką nie możemy płynąć do tyłu.
+
+---
+
+
 
